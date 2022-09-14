@@ -13,6 +13,7 @@ class CounterScreen extends ViewModelBuilderWidget<CounterViewModel> {
   Widget builder(BuildContext context, CounterViewModel viewModel, Widget? child) {
 
     return Scaffold(
+      appBar: AppBar(title: Text(flavorConfig.type),leading: Icon(flavorConfig.icon),),
       body: Center(
         child: Text(viewModel.count.toString()),
       ),
